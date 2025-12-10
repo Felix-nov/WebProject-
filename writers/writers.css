@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+   
+
+}
+body{
+     background-color: darkgray;
+}
+.header {
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 15vh;
+    justify-content: space-between;
+    justify-items: center;
+    display: flex;
+    flex-basis: 32%;
+    padding: 20px;
+    /* border-bottom: 3px double white; */
+    position:fixed;
+    top: 0;
+    background: rgba(56, 34, 34, 0.932);
+    z-index: 1;
+   
+}
+
+.logo {
+    color: white;
+    cursor: pointer;
+}
+
+.logo>p {
+    font-size: 30px;
+    font-weight: bolder;
+    text-shadow: 0px 0px 10px rgb(0, 255, 221);
+}
+
+.logo>span {
+    position: absolute;
+    left: 110px;
+    top: 63px;
+    font-size: small;
+    text-shadow: 0px 0px 10px rgb(0, 255, 221);
+}
+
+/* menu section in header */
+.menu {
+    flex: 1;
+    text-align: right;
+}
+
+.menu>ul>li {
+    padding-top: 13px;
+    list-style: none;
+    display: inline-block;
+}
+
+.menu>ul>li>a {
+    text-decoration: none;
+    padding: 12px 15px;
+    color: white;
+    font-size: 18px;
+}
+
+.menu>ul>li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: aqua;
+    display: block;
+    transition: 0.5s;
+    margin: auto;
+}
+
+.menu>ul>li:hover::after {
+    width: 100%;
+}
+
+.header>div>.fa {
+    display: none;
+}
+
+
+/* media Query for moblie view */
+
+@media (max-width:700px) {
+  .menu>ul>li {
+        display: block;
+        border-bottom: 1px solid gray;
+
+    }
+
+    .menu>ul>li:last-child {
+        border: none;
+    }
+
+    .menu>ul {
+        padding-top: 30px;
+    }
+
+
+    .menu>ul>li::after {
+        margin-left: 8px;
+    }
+
+    .menu>ul>li:hover::after {
+        width: 60%;
+    }
+
+    .menu {
+         position: absolute;
+        /* background: rgba(67, 236, 166, 0.822); */
+        background: linear-gradient(rgba(255, 0, 0, 0.664),rgba(67, 236, 166, 0.822),rgba(67, 236, 166, 0.822),rgba(67, 236, 166, 0.822),rgba(255, 51, 0, 0.884));
+
+        height: 100vh;
+        width: 0px;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        text-align: left;
+        transition: 1s;
+    }
+
+    .header>div>.fa {
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+}
+
+
+
+
+.footer{
+    height: 13vh;
+    width: 100%;
+    /* border: 1px solid red; */
+    background-color: rgb(106, 183, 245);
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    position: fixed;
+}

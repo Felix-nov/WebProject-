@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="" type="text/css">
+    <title>Thankyou</title>
+    <style>
+        body {
+            display: block;
+            width: 100%;
+            height: 10vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.7)), url(photocopy/bookshelf.jpg);
+            justify-content: center;
+            justify-items: center;
+            box-sizing: border-box;
+            padding-top: 70px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 60px;
+            text-shadow: 0px 0px 5px red;
+            overflow: hidden;
+        }
+
+        h1 {
+            box-sizing: border-box;
+            color: blue;
+            width: 500px;
+            height: 320px;
+            border: 1px solid rgb(255, 255, 255);
+            text-align: center;
+            padding-top: 20px;
+            line-height: 120px;
+            background: linear-gradient(to top, rgba(255, 255, 255, 0.07)50%);
+            border-radius: 20px;
+            box-shadow: 0px 0px 30px white;
+
+        }
+        div{
+             transition: 0.6s;
+            position: absolute;
+           top: 500px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+            .continue{
+                padding: 15px 30px;
+                border: 1px solid rgb(255, 94, 0);
+                border-radius: 20px;
+            }
+            .continue>a{
+                font-size: 18px;
+                font-weight: bold;
+                text-decoration: none;
+               transition: 0.6s;
+               
+            }
+            .continue:hover {
+              border-radius: 20px;
+                background: rgb(255, 94, 0);
+            }
+        .continue>a:hover{
+            font-size: 22px;
+        }
+        @media (max-width:700px) {
+            h1 {
+          
+            width: 400px;
+            height: 240px;
+           font-size: 80px;
+           line-height: 80px;
+        }
+        div{
+           top: 390px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Thank you </h1>
+    <div>
+        <button class="continue"><a href="../main page/Main.html">To Continue</a></button>
+    </div>
+</body>
+
+</html>
